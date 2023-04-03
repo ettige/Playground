@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Vazirmatn RD";
+    src: url('fonts/webfonts/Vazirmatn-RD-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+*{
+    box-sizing: border-box;
+    font-family: "Vazirmatn RD",'Courier New', Courier, monospace,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sc-dark-theme{
+    background-color: #3ac !important;
+}
+.sc-text-cyan{
+    color: #3ac !important;
+}
+body::before{
+    content: '';
+    display: block;
+    height: 74px;
+}
