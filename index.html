@@ -31,7 +31,7 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropmenuNav" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Language
+                                Setting
                             </a>
                             <ul class="dropdown-menu sc-dark-theme dropdown-menu-dark dropdown-menu-start" aria-labelledby="dropmenuNav">
                                 <li><h5 class="ps-2">Theme</h5></li>
@@ -48,7 +48,7 @@
             </div>
         </nav>
     </header>
-    <section class="bg-dark text-light text-center text-sm-start">
+    <section id="AboutMe" class="bg-dark text-light text-center text-sm-start">
         <div class="container pt-5 py-sm-5 d-sm-flex justify-content-between align-items-center">
             <div class="container-fluid">
                 <h1>Mohammad Latifi <span class="sc-text-cyan">WebDev</span> </h1>
@@ -59,42 +59,54 @@
     </section>
     <section class="bg-light py-4">
         <div class="container" id="Projects">
-            <div class="row gap-5 justify-content-between align-content-center">
-                <div class="col-md card">
-                    <img src="img/Projects/Resume Old.png" alt="">
+            <div class="row gap-md-4 justify-content-between align-content-center">
+                <div class="col-md card justify-content-between">
+                    <img class="card-img" src="img/Projects/Resume Old.png" alt="">
                     <div class="card-body">
                         <h3 class="card-title">Old Resume</h3>
                         <p class="card-text">
                             My old Resume webpage designed with pure HTML/CSS.
                         </p>
-                        <button class="btn btn-info">Visit Now</button>
+                        <a href="#" class="btn btn-info">Visit Now</a>
                     </div>
                 </div>
-                <div class="col-md card">
-                    <i class="bi bi-laptop"></i>
+                <div class="col-md card justify-content-between align-content-between">
+                    <img src="img/Projects/current.png" alt="current png">
                     <div class="card-body">
-                        <h3 class="card-title">Old Resume</h3>
+                        <h3 class="card-title">Resume</h3>
                         <p class="card-text">
-                            My old Resume webpage designed with pure HTML/CSS.
+                            Currently resume webpage build by powerfull bootstrap
                         </p>
+                        <a href="#" class="btn btn-info">Visit Now</a>
                     </div>
                 </div>
                 <div class="col-md card">
-                   
+                    <img src="img/Projects/signup.png" alt="">
                     <div class="card-body">
                         <h3 class="card-title">Sign Up Page</h3>
+                        <a href="#" class="btn btn-info">Visit Now</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+    <section class="bg-dark text-light">  
+        <div id="Social" class="container d-flex justify-content-around align-content-center p-3">
+            <h2 class="text-center">Social <span class="text-danger">Media</span></h2>
+            <div class="gap-4 d-flex align-items-center">
+                <div class="d-block h1 bg-secondary p-3 p-md-5 rounded-3"><a href="https://github.com/ettige" target="_blank" class="link-light bi bi-github"></a></div>
+                <div class="d-block h1 bg-secondary p-3 p-md-5 rounded-3"><a href="http://t.me/mmadstrong" target="_blank" class="link-info bi bi-telegram"></a></div>
+                <div class="d-block h1 bg-secondary p-3 p-md-5 rounded-3"><a href="https://discord.gg/PTbh6bSu" target="_blank" class="link-light bi bi-discord"></a></div>
+                <div class="d-block h1 bg-secondary p-3 p-md-5 rounded-3"><a href="https://steamcommunity.com/id/strongq/" target="_blank" class="link-info bi bi-steam"></a></div>
+            </div>
+        </div>
+    </section>
     <footer>
         
     </footer>
     <script src="bootstrap-5.0.2-dist\js\bootstrap.bundle.min.js">
     </script>
-
+    
     <script src="main.js">
     </script>
 </body>
