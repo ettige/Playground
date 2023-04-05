@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,8 +13,8 @@
 <body >
     <header>
         <nav class="navbar navbar-expand-sm sc-dark-theme navbar-dark fixed-top">
-            <div class="container">    
-                <a href="#brand" class="navbar-brand"> <img src="undraw_cat_epte.svg" alt="cat-undraw" height="48">Mohammad Latifi</a>
+            <div class="container justify-content-between">    
+                <a href="#brand" class="navbar-brand"> <img src="img/undraw_cat_epte.svg" alt="cat-undraw" height="48">Mohammad Latifi</a>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -50,16 +50,98 @@
     </header>
     <section id="AboutMe" class="bg-dark text-light text-center text-sm-start">
         <div class="container pt-5 py-sm-5 d-sm-flex justify-content-between align-items-center">
-            <div class="container-fluid">
+            <div class="container-fluid text-start">
                 <h1>Mohammad Latifi <span class="sc-text-cyan">WebDev</span> </h1>
                 <p class="lead my-4"> 17 y.o web developer from Gilan,Iran.known as <span class="text-warning">Strong</span> on media.</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">
+                    SignUp
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="signupModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content text-dark bg bg-light">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="signupModalLabel">ثبت نام</h5>
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="Personal-tab" data-bs-toggle="tab" data-bs-target="#Personal" type="button" role="tab" aria-controls="home" aria-selected="true">Personal</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="Business-tab" data-bs-toggle="tab" data-bs-target="#Business" type="button" role="tab" aria-controls="profile" aria-selected="false">Business</button>
+                                    </li>
+                                </ul> 
+                                <button type="button" style="margin:0 !important" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body tab-content" id="tabContent">
+                                <div class="tab-pane fade show active" id="Personal" role="tabpanel" aria-labelledby="Personal-tab">
+                                    <div class="form-section">
+                                          
+                                        <div class="form-content">
+                                            <label for="firstName">نام:</label>
+                                            <input data-required="true" class="form-control" type="text" name="firstName" id="firstName" placeholder="نام">
+                                        </div>
+                                        <div class="form-content">
+                                            <label for="lastName">نام خوانوادگی:</label>
+                                            <input class="input-box form-control" type="text" name="lastName" id="lastName" placeholder="نام خوانوادگی">
+                                        </div>
+                                        
+                                        <div class="form-content">
+                                            
+                                            <label for="fatherName">نام پدر:</label>
+                                            <input data-required="true" class="input-box form-control" type="text" name="fatherName" id="fatherName" placeholder="نام پدر">
+                                        </div>
+                                        <div class="form-content">
+                                            <label for="nationid">کدملی:</label>
+                                            <input class="input-box form-control" name="nationid" id="nationid" type="text" minlength="10" maxlength="10" placeholder="کدملی">
+                                        </div>
+                                        <div class="form-content">
+                                            <label for="provinces">استان:</label>
+                                            <select class="input-box form-select" name="provinces" id="provinces" >
+                                                
+                                            </select>
+                                        </div>
+                                        <div class="form-content">
+                                            <label for="cities">شهر:</label>
+                                            <select class="input-box form-select" name="cities" id="cities">
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="tab-pane fade" id="Business" role="tabpanel" aria-labelledby="Business-tab">         
+                                    <div class="form-content form-company">
+                                        <label for="companyName">نام شرکت:</label>
+                                        <input type="text" class="input-box form-control" name="companyName" id="companyName" placeholder="نام شرکت">
+                                    </div>
+                                    
+                                    <div class="form-content form-company" id="input-address">
+                                        <label for="companyAddress">ادرس شرکت:</label>
+                                        <textarea name="companyAddress" class="input-box form-control" id="companyAddress" cols="28" rows="4" placeholder="ادرس شرکت" style="resize: none;"></textarea>
+                                    </div>
+                                </div>
+                                <div class="submit-section">
+                                    
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <input type="checkbox" name="acceptTerms" id="acceptTerms" value="acceptTerms">
+                                <label for="accpetTerms">تمام قوانین را خوانده ام .</label>
+                                <br>
+                                <input class="submit-btn btn btn-primary" type="submit" id="submit" value="ثبت نام">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
             <img src="img\undraw_coding_re_iv62.svg"  alt="Coding Avatar Banner" class="img-fluid w-50 d-none d-md-block">
         </div>
     </section>
-    <section class="bg-light py-4">
-        <div class="container" id="Projects">
-            <div class="row gap-md-4 justify-content-between align-content-center">
+    <section id="Projects" class="bg-light py-4">
+        <div class="container">
+            <div class="row gap-md-4 gap-2 justify-content-between align-content-center">
                 <div class="col-md card justify-content-between">
                     <img class="card-img" src="img/Projects/Resume Old.png" alt="">
                     <div class="card-body">
@@ -70,6 +152,7 @@
                         <a href="#" class="btn btn-info">Visit Now</a>
                     </div>
                 </div>
+
                 <div class="col-md card justify-content-between align-content-between">
                     <img src="img/Projects/current.png" alt="current png">
                     <div class="card-body">
@@ -90,14 +173,14 @@
             </div>
         </div>
     </section>
-    <section class="bg-dark text-light">  
+    <section class="bg-dark text-light"> 
         <div id="Social" class="container d-flex justify-content-around align-content-center p-3">
-            <h2 class="text-center">Social <span class="text-danger">Media</span></h2>
+            <div class="h2 d-flex align-items-center">Social <span class="text-danger">Media</span></div>
             <div class="gap-4 d-flex align-items-center">
-                <div class="d-block h1 bg-secondary p-3 p-md-5 rounded-3"><a href="https://github.com/ettige" target="_blank" class="link-light bi bi-github"></a></div>
-                <div class="d-block h1 bg-secondary p-3 p-md-5 rounded-3"><a href="http://t.me/mmadstrong" target="_blank" class="link-info bi bi-telegram"></a></div>
-                <div class="d-block h1 bg-secondary p-3 p-md-5 rounded-3"><a href="https://discord.gg/PTbh6bSu" target="_blank" class="link-light bi bi-discord"></a></div>
-                <div class="d-block h1 bg-secondary p-3 p-md-5 rounded-3"><a href="https://steamcommunity.com/id/strongq213/" target="_blank" class="link-info bi bi-steam"></a></div>
+                <div class="d-block h1 bg-secondary p-1 p-md-5 rounded-3"><a href="https://github.com/ettige" target="_blank" class="link-light bi bi-github"></a></div>
+                <div class="d-block h1 bg-secondary p-1 p-md-5 rounded-3"><a href="http://t.me/mmadstrong" target="_blank" class="link-info bi bi-telegram"></a></div>
+                <div class="d-block h1 bg-secondary p-1 p-md-5 rounded-3"><a href="https://discord.gg/PTbh6bSu" target="_blank" class="link-light bi bi-discord"></a></div>
+                <div class="d-block h1 bg-secondary p-1 p-md-5 rounded-3"><a href="https://steamcommunity.com/id/strongq213/" target="_blank" class="link-info bi bi-steam"></a></div>
             </div>
         </div>
     </section>

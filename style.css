@@ -20,3 +20,9 @@ body::before{
     display: block;
     height: 74px;
 }
+.text-end{
+    text-align: end ;
+}
+.text-start{
+    text-align: start !important;
+}
