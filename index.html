@@ -61,7 +61,7 @@
                 <!-- Modal -->
                 <div class="modal fade" id="signupModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
-                        <div class="modal-content text-dark bg bg-light">
+                        <form class="modal-content text-dark bg bg-light" method="post">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="signupModalLabel">ثبت نام</h5>
                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -77,16 +77,16 @@
                             <div class="modal-body tab-content" id="tabContent">
                                 <div class="tab-pane fade show active" id="Personal" role="tabpanel" aria-labelledby="Personal-tab">
                                     <div class="form-section">
-                                          
-                                        <div class="form-content">
-                                            <label for="firstName">نام:</label>
-                                            <input data-required="true" class="form-control" type="text" name="firstName" id="firstName" placeholder="نام">
+                                        <div class="row">
+                                            <div class="form-content col-md">
+                                                <label for="firstName">نام:</label>
+                                                <input data-required="true" class="form-control" type="text" name="firstName" id="firstName" placeholder="نام">
+                                            </div>
+                                            <div class="form-content col-md">
+                                                <label for="lastName">نام خوانوادگی:</label>
+                                                <input class="input-box form-control" type="text" name="lastName" id="lastName" placeholder="نام خوانوادگی">
+                                            </div>
                                         </div>
-                                        <div class="form-content">
-                                            <label for="lastName">نام خوانوادگی:</label>
-                                            <input class="input-box form-control" type="text" name="lastName" id="lastName" placeholder="نام خوانوادگی">
-                                        </div>
-                                        
                                         <div class="form-content">
                                             
                                             <label for="fatherName">نام پدر:</label>
@@ -99,7 +99,6 @@
                                         <div class="form-content">
                                             <label for="provinces">استان:</label>
                                             <select class="input-box form-select" name="provinces" id="provinces" >
-                                                
                                             </select>
                                         </div>
                                         <div class="form-content">
@@ -131,7 +130,7 @@
                                 <br>
                                 <input class="submit-btn btn btn-primary" type="submit" id="submit" value="ثبت نام">
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
                 
@@ -152,7 +151,7 @@
                         <a href="#" class="btn btn-info">Visit Now</a>
                     </div>
                 </div>
-
+                
                 <div class="col-md card justify-content-between align-content-between">
                     <img src="img/Projects/current.png" alt="current png">
                     <div class="card-body">
